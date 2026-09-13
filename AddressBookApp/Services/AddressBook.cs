@@ -88,4 +88,22 @@ public class AddressBook
 
     Console.WriteLine("Contact updated successfully.");
 }
+    
+    
+    public void DeleteContact(string firstName, string lastName)
+    {
+        Contact? contact = contacts.FirstOrDefault(c =>
+            c.FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
+            c.LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase));
+
+        if (contact == null)
+        {
+            Console.WriteLine("Contact not found.");
+            return;
+        }
+
+        contacts.Remove(contact);
+
+        Console.WriteLine("Contact deleted successfully.");
+    }
 }
