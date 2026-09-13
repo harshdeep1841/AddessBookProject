@@ -1,3 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using AddressBook.Models;
 
-Console.WriteLine("Hello, World!");
+Contact contact = new Contact(
+    "John",
+    "Doe",
+    "12 MG Road",
+    "Pune",
+    "Maharashtra",
+    "411001",
+    "9876543210",
+    "john.doe@mail.com"
+);
+
+Console.WriteLine(contact);
