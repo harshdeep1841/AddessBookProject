@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/AddressBook.csproj",
-      "projectName": "AddressBook",
-      "projectPath": "/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/AddressBook.csproj",
+      "projectUniqueName": "/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBookApp/AddressBookApp.csproj",
+      "projectName": "AddressBookApp",
+      "projectPath": "/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBookApp/AddressBookApp.csproj",
       "packagesPath": "/Users/harshdeepsingh/.nuget/packages/",
-      "outputPath": "/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/obj/",
+      "outputPath": "/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBookApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/harshdeepsingh/.nuget/NuGet/NuGet.Config"
