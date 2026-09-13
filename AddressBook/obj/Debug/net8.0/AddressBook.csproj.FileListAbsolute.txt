@@ -1,0 +1,14 @@
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/bin/Debug/net8.0/AddressBook
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/bin/Debug/net8.0/AddressBook.deps.json
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/bin/Debug/net8.0/AddressBook.runtimeconfig.json
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/bin/Debug/net8.0/AddressBook.dll
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/bin/Debug/net8.0/AddressBook.pdb
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/obj/Debug/net8.0/AddressBook.GeneratedMSBuildEditorConfig.editorconfig
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/obj/Debug/net8.0/AddressBook.AssemblyInfoInputs.cache
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/obj/Debug/net8.0/AddressBook.AssemblyInfo.cs
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/obj/Debug/net8.0/AddressBook.csproj.CoreCompileInputs.cache
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/obj/Debug/net8.0/AddressBook.dll
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/obj/Debug/net8.0/refint/AddressBook.dll
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/obj/Debug/net8.0/AddressBook.pdb
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/obj/Debug/net8.0/AddressBook.genruntimeconfig.cache
+/Users/harshdeepsingh/RiderProjects/AddressBook/AddressBook/obj/Debug/net8.0/ref/AddressBook.dll
