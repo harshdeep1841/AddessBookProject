@@ -9,7 +9,8 @@ while (true)
     Console.WriteLine();
     Console.WriteLine("===== ADDRESS BOOK =====");
     Console.WriteLine("1. Add Contact");
-    Console.WriteLine("2. Show All Contacts");
+    Console.WriteLine("2. Edit Contact");
+    Console.WriteLine("3. Show All Contacts");
     Console.WriteLine("0. Exit");
     Console.Write("Enter your choice: ");
 
@@ -20,7 +21,7 @@ while (true)
         break;
     }
 
-    if (choice == "1")
+    else if (choice == "1")
     {
         try
         {
@@ -67,8 +68,27 @@ while (true)
         {
             Console.WriteLine($"Error: {ex.Message}");
         }
+        
     }
+    
     else if (choice == "2")
+    {
+       Console.Write("Enter first name of contact to edit: ");
+       string firstName = Console.ReadLine()!;
+
+       Console.Write("Enter last name of contact to edit: ");
+       string lastName = Console.ReadLine()!;
+
+       try
+       {
+           addressBook.EditContact(firstName, lastName);
+       }
+       catch (InvalidContactException ex)
+       {
+           Console.WriteLine($"Error: {ex.Message}");
+       }
+    }
+    else if (choice == "3")
     {
         addressBook.PrintAll();
     }
