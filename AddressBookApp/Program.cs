@@ -24,6 +24,7 @@ while (true)
     Console.WriteLine("5. Total Contact Count");
     Console.WriteLine("6. Search by City");
     Console.WriteLine("7. Search by State");
+    Console.WriteLine("8. Visit by State Or City");
     Console.WriteLine("0. Exit");
     Console.Write("Enter your choice: ");
 
@@ -175,6 +176,12 @@ while (true)
                 Console.WriteLine(contact);
             }
         }
+    }
+    
+    else if (choice == "8")
+    {
+        Console.WriteLine("Contacts Grouped by City or State");
+        main.ViewByCityOrState();
     }
 
     else
