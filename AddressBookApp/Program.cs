@@ -27,6 +27,7 @@ while (true)
     Console.WriteLine("8. Visit by State or City");
     Console.WriteLine("9. Count by City or State");
     Console.WriteLine("10. Sort by name");
+    Console.WriteLine("11. Sort Contacts by City/State/Zip");
     Console.WriteLine("0. Exit");
     Console.Write("Enter your choice: ");
 
@@ -212,6 +213,43 @@ while (true)
         }
         
        
+    }
+    
+    else if (choice == "11")
+    {
+        Console.WriteLine();
+        Console.WriteLine("===== SORT CONTACTS =====");
+        Console.WriteLine("1. Sort by City");
+        Console.WriteLine("2. Sort by State");
+        Console.WriteLine("3. Sort by Zip");
+        Console.Write("Enter your choice: ");
+
+        string? sortChoice = Console.ReadLine();
+
+        List<Contact> sortedContacts;
+
+        if (sortChoice == "1")
+        {
+            sortedContacts = main.SortByCity();
+        }
+        else if (sortChoice == "2")
+        {
+            sortedContacts = main.SortByState();
+        }
+        else if (sortChoice == "3")
+        {
+            sortedContacts = main.SortByZip();
+        }
+        else
+        {
+            Console.WriteLine("Invalid sorting choice.");
+            continue;
+        }
+
+        foreach (Contact contact in sortedContacts)
+        {
+            Console.WriteLine(contact);
+        }
     }
 
     else

@@ -71,6 +71,30 @@ public class AddressBookMain
             .ThenBy(contact => contact.LastName)
             .ToList();
     }
+    
+    public List<Contact> SortByCity()
+    {
+        return books
+            .SelectMany(book => book.Contacts)
+            .OrderBy(contact => contact.City)
+            .ToList();
+    }
+
+    public List<Contact> SortByState()
+    {
+        return books
+            .SelectMany(book => book.Contacts)
+            .OrderBy(contact => contact.State)
+            .ToList();
+    }
+
+    public List<Contact> SortByZip()
+    {
+        return books
+            .SelectMany(book => book.Contacts)
+            .OrderBy(contact => contact.Zip)
+            .ToList();
+    }
 
    
 
