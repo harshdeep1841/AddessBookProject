@@ -62,6 +62,17 @@ public class AddressBookMain
             Console.WriteLine($"{group.Key.City}, {group.Key.State} , {group.Count()}");
         }
     }
+    
+    public List<Contact> SortByName()
+    {
+        return books
+            .SelectMany(book => book.Contacts)
+            .OrderBy(contact => contact.FirstName)
+            .ThenBy(contact => contact.LastName)
+            .ToList();
+    }
+
+   
 
 
 }

@@ -26,6 +26,7 @@ while (true)
     Console.WriteLine("7. Search by State");
     Console.WriteLine("8. Visit by State or City");
     Console.WriteLine("9. Count by City or State");
+    Console.WriteLine("10. Sort by name");
     Console.WriteLine("0. Exit");
     Console.Write("Enter your choice: ");
 
@@ -188,6 +189,29 @@ while (true)
     else if (choice == "9")
     {
         main.CountCityOrState();
+    }
+    
+    else if (choice == "10")
+    {
+        
+        List<Contact> sortedContacts = main.SortByName();
+
+        if (sortedContacts.Count == 0)
+        {
+            Console.WriteLine("No contacts found.");
+            
+        }
+
+        else
+        {
+            Console.WriteLine("List of Contacts in Sorted order");
+            foreach (Contact contact in sortedContacts)
+            {
+                Console.WriteLine(contact);
+            }
+        }
+        
+       
     }
 
     else
