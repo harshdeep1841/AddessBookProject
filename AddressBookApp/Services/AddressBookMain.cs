@@ -26,4 +26,27 @@ public class AddressBookMain
         
     }
 
+    public void ViewByCityOrState()
+    {
+        var groups = books
+            .SelectMany(book => book.Contacts)
+            .GroupBy(contact => new
+            {
+                contact.City,
+                contact.State
+            });
+
+        foreach (var group in groups)
+        {
+            Console.WriteLine();
+            Console.WriteLine($"{group.Key.City}, {group.Key.State}");
+
+            foreach (Contact contact in group)
+            {
+                Console.WriteLine($"{contact}");
+            }
+        }
+    }
+
+
 }
