@@ -12,7 +12,14 @@ public class AddressBook
     public void AddContact(Contact contact)
     {
         ContactValidator.Validate(contact);
+        
+        bool alreadyExists = contacts.Any(c=>c.FirstName.Equals(contact.FirstName, StringComparison.OrdinalIgnoreCase) && c.LastName.Equals(contact.LastName, StringComparison.OrdinalIgnoreCase));
 
+        if (alreadyExists)
+        {
+            Console.WriteLine("Contact already exists.");
+            return;
+        }
         contacts.Add(contact);
     }
 
